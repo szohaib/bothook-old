@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bothook - Feedback Chatbot</title>
+    <meta content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="Site Description Here" name="description">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/stack-interface.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/socicon.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/lightbox.min.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/flickity.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/iconsmind.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/jquery.steps.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/theme.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" media="all" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i%7CMaterial+Icons" rel="stylesheet">
+</head>
+<body class="">
+    <a id="start"></a>
+   <div class="navbar navbar-fixed-top navbar-default animated slideInDown wow  hidden-xs" data-wow-delay=".2s">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img class="img-responsive" src="img/bothook-logo.png" style="margin-top: 5px" width="120"></a> <button class="navbar-toggle collapsed" data-target=".navHeaderCollapse" data-toggle="collapse" style="margin-top: 20px"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size: 20px">Products <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="feedback.html" style="font-size: 20px">Feedback Bot</a>
+                            </li>
+                            <li>
+                                <a href="#" style="font-size: 20px">LiveChat Bot</a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="pricing.html" style="font-size: 20px">Buy</a>
+                    </li>
+            
+                    <li>
+                        <a href="usecases.html" style="font-size: 20px">Use Cases</a>
+                    </li>
+                    <li>
+                        <a href="#" style="font-size: 20px">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav class="bar bar-toggle hidden-lg hidden-sm hidden-md" data-fixed-at="200">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-5">
+                            <div class="bar__module">
+                                <a href="index.html">
+                                    <img class="img-responsive" src="img/bothook-logo.png" style="margin-top: 5px" width="120">
+                                    
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class=" col-xs-7">
+                            <div class="bar__module">
+                                <a class="menu-toggle pull-right" href="#" data-notification-link="sidebar-menu">
+                                    <i class="stack-interface stack-menu"></i>
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <!--end columns-->
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <div class="notification pos-right pos-top side-menu bg--white" data-notification-link="sidebar-menu" data-animation="from-right">
+                <div class="side-menu__module pos-vertical-center text-left">
+                    <img class="img-responsive center-block" src="img/bothook-logo.png" style="margin-top: 5px" width="120">
+                    
+                    <hr class="short2">
+                    <ul class="menu-vertical text-center">
+                        <li class="active"></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="font-size: 20px">Products <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="feedback.html" style="font-size: 20px">Feedback Bot</a>
+                            </li>
+                            <li>
+                                <a href="#" style="font-size: 20px">LiveChat Bot</a>
+                            </li>
+                            <li>
+                                <a href="#"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <hr class="short2">
+                    <li>
+                        <a href="pricing.html" style="font-size: 20px">Buy</a>
+                    </li>
+                    <hr class="short2">
+                    <li>
+                        <a href="usecases.html" style="font-size: 20px">Use Cases</a>
+                    </li>
+                    <hr class="short2">
+                    <li>
+                        <a href="#" style="font-size: 20px">Blog</a>
+                    </li>
+                    <hr class="short2">
+                    </ul>
+                </div>
+                <!--end module-->
+                <div class="side-menu__module pos-bottom pos-absolute col-xs-12 text-right">
+                    <ul class="social-list list-inline text-right list--hover">
+                        <li>
+                            <a href="#">
+                                <i class="socicon socicon-google icon icon--xs"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="socicon socicon-twitter icon icon--xs"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="socicon socicon-facebook icon icon--xs"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="socicon socicon-instagram icon icon--xs"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    <div class="main-container">
+        <section class="cover switchable" style="padding-top: 0px">
+            <div class="imagebg">
+                <div class="background-image-holder"><img alt="background" src="img/feedback-bg.jpg"></div>
+                <div class="container" style="padding-top: 80px">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-7 col-xs-12">
+                            <div class="switchable__text">
+                                <h1 class="white">Track your workflow with Feedback Chatbot</h1>
+                                <p class="lead white">Getting feedback from customers is near impossible. This bot makes the process quick and seamless.</p>
+                                <div style="padding-top: 220px">
+                                    <a class="btn btn--secondary type--uppercase" href="index.html"><span class="btn__text color--primary"><!-- Facebook Messenger icon by Icons8 -->
+                                    <img height="24" src="https://png.icons8.com/facebook-messenger/color/24" title="Facebook Messenger" width="24"> View The Demo</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-5 hidden-xs text-center">
+                            <div class="banner-image">
+                                <div class="watch"><img alt="" src="img/feedback-iphone.png"></div>
+                                <div class="mobile"><img alt="" src="img/feedback-ipad.png"></div>
+                            </div><!--end video cover-->
+                        </div><!--end of row-->
+                    </div><!--end of container-->
+                </div>
+            </div>
+        </section>
+        <section class="text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                        <h2>Perfect for People &amp; People</h2>
+                        <p class="lead">Whether you’re building a welcome mat for your SaaS or a clean, corporate portfolio, Stack has your design needs covered.</p>
+                    </div>
+                </div><!--end of row-->
+            </div><!--end of container-->
+        </section>
+        <section class=" imagebg image--light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 col-xs-12"><img src="img/nexo-image.png"></div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <div class="tabs-container tabs--vertical">
+                            <ul class="tabs text-center">
+                                <li class="active">
+                                  <div class="tab__title">
+
+                                      <i class="icon icon--sm block color--primary fa fa-line-chart fa-3x"></i><br>
+                                      <span class="h5">Grow</span>
+                                  </div>
+                                    <div class="tab__content">
+                                        <div class="col-md-12">
+                                            <div class="boxed boxed--border text-center animated bounceIn">
+                            <i class="icon icon--sm block color--primary fa fa fa-line-chart fa-4x"></i> <span class="h1">Grow</span>
+                                                <p class="lead">What would it mean to your business if you saw a
+70% increase in sales with incentives, 50% improvement
+quality monitoring, and 40% increase in getting honest feedback? Our Bot makes it happen.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tab__title">
+                                        <i class="icon icon--sm block color--primary fa fa-bell-o fa-3x"></i> <span class="h5">Smart Notification</span>
+                                    </div>
+                                    <div class="tab__content">
+                                        <div class="col-md-12">
+                                            <div class="boxed boxed--border text-center">
+                                                <i class="icon icon--sm block color--primary fa fa-bell-o fa-4x"></i> <span class="h1">Smart Notification</span>
+                                                <p class="lead">Stack offers a clean and contemporary look to suit a range of purposes from corporate, tech startup, marketing site to digital storefront.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tab__title">
+                                        <i class="icon icon--sm block color--primary fa fa-columns fa-3x"></i>
+                                        <br>
+                                        <span class="h5">Panels</span>
+                                    </div>
+                                    <div class="tab__content">
+                                        <div class="col-md-12">
+                                            <div class="boxed boxed--border text-center">
+                                                <i class="icon icon--sm block color--primary fa fa-columns fa-4x"></i> <span class="h1">Panels</span>
+                                                <p class="lead">Medium Rare is an elite author known for offering high-quality, high-value products backed by timely and personable support.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tab__title">
+                                        <i class="icon icon--sm block color--primary fa fa-gamepad fa-4x"></i>
+                                        <br>
+                                        <span class="h5">Control Flow</span>
+                                    </div>
+                                    <div class="tab__content">
+                                        <div class="col-md-12">
+                                            <div class="boxed boxed--border text-center">
+                                                <i class="icon icon--sm block color--primary fa fa-gamepad fa-4x"></i> <span class="h1">Control Flow</span>
+                                                <p class="lead">Medium Rare is an elite author known for offering high-quality, high-value products backed by timely and personable support.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tab__title">
+                                        <i class="icon icon--sm block color--primary fa fa-compress fa-3x"></i>
+                                        <br>
+                                         <span class="h5">Integrate</span>
+                                    </div>
+                                    <div class="tab__content">
+                                        <div class="col-md-12">
+                                            <div class="boxed boxed--border text-center">
+                                                <i class="icon icon--sm block color--primary fa fa-compress fa-4x"></i> <span class="h1">Integrate</span>
+                                                <p class="lead">Medium Rare is an elite author known for offering high-quality, high-value products backed by timely and personable support.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--end of row-->
+            </div><!--end of container-->
+        </section>
+        <section class="text-center bg--secondary" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                        <h2>How it works</h2>
+                        <p class="lead">Know how the feedback chatbot will help you grow your business and earn you a lot more money.</p>
+                    </div>
+                </div><!--end of row-->
+            </div><!--end of container-->
+        </section>
+        <section class="bg--secondary">
+            <div class="container">
+                <div class="col-md-4 col-sm-4">
+
+                    <div class="single-process">
+                        <div class="process-icon">
+                            <span>1</span>
+                        </div>
+                        <h4>Sign Up</h4>
+                        <p>Drop in your name. We will send you the product</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <span class="border"></span>
+                    <div class="single-process">
+                        <div class="process-icon">
+                            <span>2</span>
+                        </div>
+                        <h4>Add Users</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicin sed do eiusmo tempor incididunt.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <span class="border"></span>
+                    <div class="single-process">
+                        <div class="process-icon">
+                            <span>3</span>
+                        </div>
+                        <h4>Go Ahead</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicin sed do eiusmo tempor incididunt.</p>
+                    </div>
+                </div>
+            </div><!--end of container-->
+        </section>
+        <section class="text-center" style="margin-top: 0px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                        <div class="cta">
+                            <h2>Flexible Pricing.</h2>
+                            <p class="lead">We've a flexible pricing. We won't charge you till you make something out of it.</p>
+                        </div>
+                    </div>
+                </div><br>
+                <!--end of row-->
+                <div class="row" style="margin-top: -20px">
+                    <div class="col-md-12">
+                        <div class="tabs-container" data-content-align="left">
+                            <ul class="tabs">
+                                <li class="active">
+                                    <div class="tab__title">
+                                        <span class="h5">Monthly</span>
+                                    </div>
+                                    <div class="tab__content">
+                                        <section class="">
+                                            <div class="container">
+                                                <div class="row" style="margin-top: -80px">
+                                                    <div class="col-sm-4">
+                                                        <div class="pricing pricing-1 boxed boxed--lg boxed--border">
+                                                            <h3>Basic</h3><span class="h2"><strong>FREE</strong></span> <span class="type--fine-print">Per Month, USD.</span>
+                                                            <hr>
+                                                            <ul>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>24/7 Phone Support</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Unlimited Skips</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Import CSV Data</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Automatic Transfer</span></li>
+                                                            </ul><a class="btn btn--primary" href="#"><span class="btn__text">Try it!</span></a>
+                                                        </div><!--end of pricing-->
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="pricing pricing-1 boxed boxed--lg boxed--border">
+                                                            <h3>Value month</h3><span class="h2"><strong>$9</strong></span> <span class="type--fine-print">Per Month, USD.</span> <span class="label">Value</span>
+                                                            <hr>
+                                                            <ul>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>24/7 Phone Support</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Unlimited Skips</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Import CSV Data</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Automatic Transfer</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Import CSV Data</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Automatic Transfer</span></li>
+                                                            </ul><a class="btn btn--primary-1" href="#"><span class="btn__text">Purchase Plan</span></a>
+                                                        </div><!--end of pricing-->
+                                                    </div>
+                                                    <div class="col-sm-4">
+
+                                                        <div class="pricing pricing-1 boxed boxed--lg boxed--border boxed--emphasis">
+                                                            <h3>Premium</h3><span class="h2"><strong>$39</strong></span> <span class="type--fine-print">Per Month, USD.</span>
+                                                            <hr>
+                                                            <ul>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>24/7 Phone Support</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Unlimited Skips</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Import CSV Data</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Automatic Transfer</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Import CSV Data</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Automatic Transfer</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Automatic Transfer</span></li>
+                                                            </ul><a class="btn btn--primary" href="#"><span class="btn__text">Purchase Plan</span></a>
+                                                        </div><!--end of pricing-->
+                                                    </div>
+                                                </div><!--end of row-->
+                                            </div><!--end of container-->
+                                        </section>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="tab__title">
+                                        <span class="h5">Yearly</span>
+                                    </div>
+                                    <div class="tab__content">
+                                        <section class="">
+                                            <div class="container">
+                                                <div class="row" style="margin-top: -80px">
+                                                    <div class="col-sm-4">
+                                                        <div class="pricing pricing-1 boxed boxed--lg boxed--border">
+                                                            <h3>Basic</h3><span class="h2"><strong>FREE</strong></span> <span class="type--fine-print">Per Month, USD.</span>
+                                                            <hr>
+                                                            <ul>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>24/7 Phone Support</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Unlimited Skips</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Import CSV Data</span></li>
+                                                                <li><span class="checkmark bg--primary-1"></span> <span>Automatic Transfer</span></li>
+                                                            </ul><a class="btn btn--primary" href="#"><span class="btn__text">Purchase Plan</span></a>
+                                                        </div><!--end of pricing-->
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="pricing pricing-1 boxed boxed--lg boxed--border">
+                                                            <h3>Value Year</h3><span class="h2"><strong>$7</strong></span> <span class="type--fine-print">Per Month, USD.</span> <span class="label">Value</span>
+                                                            <hr>
+                                                            <ul>
+                                                              <li><span class="checkmark bg--primary-1"></span> <span>24/7 Phone Support</span></li>
+                                                              <li><span class="checkmark bg--primary-1"></span> <span>Unlimited Skips</span></li>
+                                                              <li><span class="checkmark bg--primary-1"></span> <span>Import CSV Data</span></li>
+                                                              <li><span class="checkmark bg--primary-1"></span> <span>Automatic Transfer</span></li>
+                                                              <li><span class="checkmark bg--primary-1"></span> <span>Import CSV Data</span></li>
+                                                              <li><span class="checkmark bg--primary-1"></span> <span>Automatic Transfer</span></li>
+                                                            </ul><a class="btn btn--primary-1" href="#"><span class="btn__text">Purchase Plan</span></a>
+                                                        </div><!--end of pricing-->
+                                                    </div>
+                                                    <div class="col-sm-4">
+                                                        <div class="pricing pricing-1 boxed boxed--lg boxed--border boxed--emphasis">
+                                                            <h3>Premium</h3><span class="h2"><strong>$25</strong></span> <span class="type--fine-print">Per Month, USD.</span>
+                                                            <hr>
+                                                            <ul>
+                                                              <li><span class="checkmark bg--primary-1"></span> <span>24/7 Phone Support</span></li>
+                                                              <li><span class="checkmark bg--primary-1"></span> <span>Unlimited Skips</span></li>
+                                                              <li><span class="checkmark bg--primary-1"></span> <span>Import CSV Data</span></li>
+                                                              <li><span class="checkmark bg--primary-1"></span> <span>Automatic Transfer</span></li>
+                                                              <li><span class="checkmark bg--primary-1"></span> <span>Import CSV Data</span></li>
+                                                              <li><span class="checkmark bg--primary-1"></span> <span>Automatic Transfer</span></li>
+                                                              <li><span class="checkmark bg--primary-1"></span> <span>Automatic Transfer</span></li>
+                                                            </ul><a class="btn btn--primary" href="#"><span class="btn__text">Purchase Plan</span></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!--end of container-->
+                                        </section>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!--end of row-->
+        </section>
+    </div><!--end of container-->
+    <section class="faq_area bg--secondary">
+        <div class="container-fluid">
+            <div class="col-sm-6 col-md-5 col-md-push-1">
+                <h2>Do you have any questions?<br>
+                You can frequently ask them</h2>
+                <ul class="accordion accordion-1">
+                    <li>
+                        <div class="accordion__title">
+                            <span class="h5">How can I retain customers using this?</span>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="lead">Stack follows the BEM naming convention that focusses on logical code readability that is reflected in both the HTML and CSS. Interactive elements such as accordions and tabs follow the same markup patterns making rapid development easier for developers and beginners alike.</p>
+                            <p class="lead">Add to this the thoughtfully presented documentation, featuring code highlighting, snippets, class customizer explanation and you've got yourself one powerful value package.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="accordion__title">
+                            <span class="h5">Visual Design</span>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="lead">Stack offers a clean and contemporary to suit a range of purposes from corporate, tech startup, marketing site to digital storefront. Elements have been designed to showcase content in a diverse yet consistent manner.</p>
+                            <p class="lead">Multiple font and colour scheme options mean that dramatically altering the look of your site is just clicks away &mdash; Customizing your site in the included Variant Page Builder makes experimenting with styles and content arrangements dead simple.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="accordion__title">
+                            <span class="h5">Stack Experience</span>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="lead">Medium Rare is an elite author known for offering high-quality, high-value products backed by timely and personable support. Recognised and awarded by Envato on multiple occasions for producing consistently outstanding products, it's no wonder over 20,000 customers enjoy using Medium Rare templates.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="accordion__title">
+                            <span class="h5">Stack Experience</span>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="lead">Medium Rare is an elite author known for offering high-quality, high-value products backed by timely and personable support. Recognised and awarded by Envato on multiple occasions for producing consistently outstanding products, it's no wonder over 20,000 customers enjoy using Medium Rare templates.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="accordion__title">
+                            <span class="h5">Stack Experience</span>
+                        </div>
+                        <div class="accordion__content">
+                            <p class="lead">Medium Rare is an elite author known for offering high-quality, high-value products backed by timely and personable support. Recognised and awarded by Envato on multiple occasions for producing consistently outstanding products, it's no wonder over 20,000 customers enjoy using Medium Rare templates.</p>
+                        </div>
+                    </li>
+                </ul><!--end accordion-->
+            </div>
+            <div class="col-sm-6 col-md-7 col-md-push-2"><img src="img/faq-image.png"></div>
+        </div>
+    </section>
+    <footer class="footer-3 text-center-xs space--xs" style="padding-top: 30px; >
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img alt="Image" class="logo" src="img/bothook-logo.png" style="margin-top: 7px">
+                        <ul class="list-inline list--hover">
+                            <li>
+                                <a href="#"><span class="type--fine-print">Get Started</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="type--fine-print">support@bothook.com</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 text-right text-center-xs">
+                        <ul class="social-list list-inline list--hover">
+                            <li>
+                                <a href="#"><i class="socicon socicon-google icon icon--xs"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="socicon socicon-twitter icon icon--xs"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="socicon socicon-facebook icon icon--xs"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="socicon socicon-instagram icon icon--xs"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- end of row -->
+                 <div class="row">
+                    <div class="col-sm-6">
+                        <p class="type--fine-print">Create your own chatbot</p>
+                    </div>
+                    <div class="col-sm-6 text-right text-center-xs">
+                        <span class="type--fine-print">&copy; <span class="update-year"></span> Bothook Inc.</span>
+                        <a class="type--fine-print" href="#">FAQ</a>
+                        <a class="type--fine-print" href="about.html">Our Team</a>
+                        <a class="type--fine-print" href="#">Careers</a>
+                        <a class="type--fine-print" href="#">Contact Us</a>
+                    </div>
+                </div><!-- end of row -->
+         </div><!-- end of container -->
+         </footer>
+    <!--<div class="loader"></div>-->
+     <a class="back-to-top inner-link" data-scroll-class="100vh:active" href="#start"><i class="stack-interface stack-up-open-big"></i></a>
+    <script src="js/jquery-3.1.1.min.js">
+    </script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>  
+    <script src="js/granim.min.js">
+    </script> 
+    <script src="js/smooth-scroll.min.js">
+    </script> 
+    <script src="js/scripts.js">
+    </script>
+</body>
+</html>
